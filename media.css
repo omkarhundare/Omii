@@ -1,0 +1,197 @@
+@media only screen and (max-width: 600px){
+    #progress-bar{
+        top: 74px;
+      }
+    nav ul{
+        position: absolute;
+        width: 100%;
+        background: #000;
+        color: #fff;
+        left: 0;
+        top: 100%;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul.active{
+        max-height: 60px;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    nav .logo{
+        width: 150px;
+    }
+    nav ul li{
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    .h1-text h1{
+        font-size: 18px;
+        letter-spacing: 5px;
+    }
+    h1::before, h1::after{
+        padding: 50px;
+    }
+
+    h1::before{
+        border-top: 10px solid #ff126d ;
+        border-left: 10px solid #ff126d;
+        }
+        h1::after{
+        border-bottom: 10px solid #ff126d ;
+        border-right: 10px solid #ff126d;
+        }
+
+        /* second sec= >  */
+        .wrapper h2 {
+            font-size: 20px;
+        }
+
+        .single-img{
+            width: 100%;
+            margin: 16px 40px;
+        }
+
+           /* third sec = >  */
+
+           .third-container{
+            margin-top: 70px;
+           }
+        .third-sec{
+            flex-wrap: wrap;
+            height: auto;
+        }
+        .main-box {
+            height: 300px;
+            width: 300px;
+        }
+
+        .accordion {
+            margin: 60px auto;
+            width: 100%;
+        }
+        .third-box-1, .third-box-2 {
+            flex-basis: 70%;
+            padding-top: 110px;
+        }
+
+        /* fourth sec =>  */
+        .f-container{
+            height: 70vh;
+        }
+        .fourth-container{
+            height: 70vh;
+        }
+        .fourth-box {
+            flex-basis: 100%;
+        }
+        .glitch{
+            font-size: 24px;
+        }
+        .feedbackbox {
+            padding: 15px 40px;
+        }
+        .uesr-text {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        .user-pic {
+            width: 40px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .user-pic.active-pic{
+            width: 60px;
+            border: 3px solid #ff0058;
+        }
+        .w-container{
+            background-image: linear-gradient(#000e2e, #004f5a);
+        }
+        .w-container{
+            height: auto;
+            padding: 20px 0%;
+        }
+        .w-content{
+            flex-direction: column;
+        }
+        .w-box{
+            flex-basis: 100%;
+            margin-bottom: 7%;
+        }
+        .w-box-1{
+            width: 300px;
+            height: 300px;
+        }
+        .w-card {
+            width: 270px;
+            height: 400px;
+        }
+        .details{
+            bottom: -195px;
+        }
+        .logo {
+            width: 130px;
+        }
+        .card {
+            height: 250px;
+            width: 400px;
+        }
+        .card-no {
+            margin-top: 24px;
+            font-size: 24px;
+        }  
+        .name {
+            font-size: 14px;
+            margin-top: 14px;
+        }
+        .bar {
+            height: 40px;
+            margin-top: 8px;  
+        }
+        .customer p{
+            font-size: 14px;
+        }       
+        .visa-img{
+            width: 50px;
+        } 
+        .card-cvv p {
+            font-size: 14px;
+        }
+        .chip-img{
+            width: 40px;
+        }
+        .front .inner p{
+            font-size: 30px;
+        }
+}
+
+@media only screen and (max-width: 400px){
+    .h1-text h1{
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+    h1::before, h1::after{
+        padding: 30px;
+    }
+    h1::before{
+        border-top: 7px solid #ff126d ;
+        border-left: 7px solid #ff126d;
+        }
+        h1::after{
+        border-bottom: 7px solid #ff126d ;
+        border-right: 7px solid #ff126d;
+        }
+        .button-container .b-buton {
+            font-size: 12px;
+            padding: 10px 20px;
+        }
+        .card{
+            display: none;
+        }
+}
