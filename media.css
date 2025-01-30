@@ -5,6 +5,12 @@
     #drone-box {
          display: none;
     }
+    .inner{
+        padding: 1rem;
+    }
+    .inner p{
+        font-size:16px;
+    }
     nav ul{
         position: absolute;
         width: 100%;
