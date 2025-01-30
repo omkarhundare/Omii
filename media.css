@@ -2,6 +2,9 @@
     #progress-bar{
         top: 74px;
       }
+    #drone-box {
+         display: none;
+    }
     nav ul{
         position: absolute;
         width: 100%;
