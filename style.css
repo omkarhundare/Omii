@@ -1092,7 +1092,7 @@ footer{
         width: 100%;
     }
     .w-box{
-        flex-basis: 33%;
+        flex-basis: 30%;
     }
     .w-box-1{
         position: relative;
@@ -1202,6 +1202,7 @@ footer{
         border-radius: 20px;
         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
         overflow: hidden;
+        margin:auto;
     }
     .w-card .poster{
         position: relative;
