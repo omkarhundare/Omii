@@ -11,6 +11,9 @@
     .inner p{
         font-size:16px;
     }
+    .inner span{
+       font-size:16px;
+    }
     nav ul{
         position: absolute;
         width: 100%;
