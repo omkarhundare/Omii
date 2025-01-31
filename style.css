@@ -222,7 +222,7 @@ nav .logo{
 .con-bo{
     height: 100vh;
     width: 100%;
-    background: url(image.png)no-repeat center center/cover;
+    background: url(images/image.png)no-repeat center center/cover;
     background-attachment: fixed;
 }
 
