@@ -3,7 +3,8 @@
         top: 74px;
       }
     #drone-box {
-         display: none;
+/*          display: none; */
+        width:100px;
     }
     .inner{
         padding: 1rem;
