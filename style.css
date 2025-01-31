@@ -177,87 +177,156 @@ html{
 /*     filter: invert(1); */
 
 nav{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 10%;
-  border-bottom: 1px solid #000;
-  z-index: 10;
-  transition: 0.5s;
+  background: #1b1b1b;
 }
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 10px 20px;
-    font-weight: 500;
-    cursor: pointer;
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
 }
 nav .logo{
-    width: 220px;
-    cursor: pointer;
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
 }
-.nav-btn{
-    background: #000;
-    color: #fff;
-    font-size: 16px;
-    padding: 15px 25px;
-    border: 0;
-    outline: 0;
-    border-radius: 40px;
-    cursor: pointer;
-
+nav ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
 }
-.nav-btn img{
-    width: 16px;
-    margin-left: 8px;
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: #1b1b1b;
+  margin: 0 5px;
 }
-.menu-icon{
-    display: none;
-    width: 30px;
+nav ul li a{
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
 }
-.con-bo{
-    height: 100vh;
+nav ul li a:hover{
+  color: cyan;
+  border-radius: 5px;
+  box-shadow:  0 0 5px #33ffff,
+               0 0 10px #66ffff;
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,.icon,input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+@media all and (max-width: 968px) {
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo{
+    padding-left: 30px;
     width: 100%;
-/*     background: url(images/background.png)no-repeat center center/cover; */
-/*     background-attachment: fixed; */
-    background: blue;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: cyan;
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
 }
-
-@media only screen and (max-width: 600px){
-    nav ul{
-        position: absolute;
-        width: 100%;
-        background: #000;
-        color: #fff;
-        left: 0;
-        top: 100%;
-        text-align: center;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.5s;
-    }
-    nav ul.active{
-        max-height: 60px;
-    }
-    .nav-btn{
-        display: none;
-    }
-    .menu-icon{
-        display: block;
-    }
-    nav .logo{
-        width: 150px;
-    }
-    nav ul li{
-        font-size: 14px;
-        margin: 10px;
-    }
-}
-
 
 
 .text-container{
