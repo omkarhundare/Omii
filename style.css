@@ -224,7 +224,7 @@ nav .logo{
     width: 100%;
 /*     background: url(images/background.png)no-repeat center center/cover; */
 /*     background-attachment: fixed; */
-    background: red;
+    background: blue;
 }
 
 @media only screen and (max-width: 600px){
